@@ -2,6 +2,8 @@ package com.example.ramices.rolecultural;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -33,6 +35,7 @@ public class TelaPrincipal extends AppCompatActivity
     {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_tela_principal);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#8A2BE2")));
         fm = getFragmentManager();
         ft = fm.beginTransaction();
         ft.add(R.id.telaPrincipal, new MapFragment());

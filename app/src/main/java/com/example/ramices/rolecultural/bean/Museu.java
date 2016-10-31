@@ -6,11 +6,11 @@ import java.io.Serializable;
  * Created by Ramices on 27/10/2016.
  */
 
-public class Museu extends InformacaoAbstract implements Serializable{
+public class Museu extends InformacaoAbstract{
 
     private String site;
 
-    public Museu(String nome, String descricao, String bairro, String logradouro, String telefone, int latitude, int longitude, String site)
+    public Museu(String nome, String descricao, String bairro, String logradouro, String telefone, long latitude, long longitude, String site)
     {
 
         this.nome = nome;

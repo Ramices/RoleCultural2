@@ -1,18 +1,20 @@
 package com.example.ramices.rolecultural.bean;
 
+import java.io.Serializable;
+
 /**
  * Created by Ramices on 27/10/2016.
  */
 
-public abstract class InformacaoAbstract {
+public abstract class InformacaoAbstract implements Serializable {
 
         protected String nome;
         protected String descricao;
         protected String bairro;
         protected String logradouro;
         protected String telefone;
-        protected int latitude;
-        protected int longitude;
+        protected long  latitude;
+        protected long  longitude;
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -26,11 +28,11 @@ public abstract class InformacaoAbstract {
         this.descricao = descricao;
     }
 
-    public int getLatitude() {
+    public long getLatitude() {
         return latitude;
     }
 
-    public int getLongitude() {
+    public long getLongitude() {
         return longitude;
     }
 
@@ -54,7 +56,7 @@ public abstract class InformacaoAbstract {
         this.bairro = bairro;
     }
 
-    public void setLatitude(int latitude) {
+    public void setLatitude(long latitude) {
         this.latitude = latitude;
     }
 
@@ -66,7 +68,7 @@ public abstract class InformacaoAbstract {
         this.logradouro = logradouro;
     }
 
-    public void setLongitude(int longitude) {
+    public void setLongitude(long longitude) {
         this.longitude = longitude;
     }
 

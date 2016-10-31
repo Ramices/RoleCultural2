@@ -26,10 +26,11 @@ public class DetalheFragment extends Fragment
     private TextView site;
 
 
+
     @Override
     public View onCreateView(LayoutInflater layoutInflater, ViewGroup parent, Bundle bundle)
     {
-        View view = layoutInflater.inflate(R.layout.fragment_detalhe, parent, false);
+        View view = layoutInflater.inflate(R.layout.activity_tela_detalhe, parent, false);
 
 
         nome = (TextView) view.findViewById(R.id.txtNomeD);

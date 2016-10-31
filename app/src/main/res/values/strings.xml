@@ -3,4 +3,6 @@
     <string name="menu_map">Mapa</string>
     <string name="menu_museu">Museu</string>
     <string name="menu_teatro">Teatro</string>
+    <string name="menu_voltar">Voltar</string>
+    <string name="btn_entrar">Entrar</string>
 </resources>
